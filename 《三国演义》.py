@@ -67,7 +67,7 @@ wc = WordCloud(background_color="white", #背景颜色
                max_font_size=100, #最大字体大小
                width=1000, height=860, margin=2)
 
-wc.generate(text_read)
+wc.fit_words(dict(over_list[20:]))
 
 plt.figure()
 #显示图片
